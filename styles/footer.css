@@ -1,0 +1,35 @@
+footer {
+    background-color: #505050;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+    
+    .footer-section {
+        background-color: #36383F;
+        margin: 2px 2px 2px 0px;
+       text-align: center;
+       padding: 20px; 
+       flex: 1 1 200px; 
+    }
+    
+    .footer-section p {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    
+/* Media Queries  */
+@media (max-width: 768px) {
+    .footer-section {
+        flex: 1 1 100%;
+        padding: 15px; 
+    }
+
+    .footer-section p {
+        font-size: 16px; 
+    }
+}

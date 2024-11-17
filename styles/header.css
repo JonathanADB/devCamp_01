@@ -1,0 +1,124 @@
+header{
+    background-color: black;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+  
+}
+
+    .navbar-brand img {
+        max-width: 200px;
+    }
+
+    .links-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        flex: 1;
+    }
+
+    .top-link a {
+        color: orange;
+    }
+    header  li, a {
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+    }
+    
+    .nav-link {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 400px;
+        font-weight:900;
+        font-size: large;
+       }
+
+    .nav-link li:last-child a {
+        color: #5c606d;
+        margin-left: 1rem;
+    }
+
+    /**********************************************/
+    .navbar-actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        
+    .navbar-actions button {
+        margin-right: 10px;
+    }
+        
+    .btn-nav {
+        font-size: 16px;
+        height: 50px;
+        padding: 8px 16px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        background-color: #373c41;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+        
+
+    .navbar-actions  .fas.fa-chevron-down {
+        color: #008000; 
+      }
+        
+    .btn-nav-primary:hover {
+        background-color: #0056b3;
+    }
+    .btn-nav-secondary:hover {
+        background-color: #495057;
+    }
+    .search-icon {
+        background-color: transparent;
+        color: #6c757d;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+    }
+        
+    .search-icon:hover {
+        color: #ccc;
+    }
+  
+
+    /* Media Queries*/
+    @media (max-width: 768px) {
+        header{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .links-wrapper{
+            width: auto;
+            flex-direction: row;
+            margin: 0;
+            gap: 1rem;
+       }
+    
+        .top-link {
+            margin-bottom: 10px; 
+        }
+    
+        .nav-link {
+            flex-direction: row;
+            gap: 1rem;
+            width: auto;
+            font-size: medium; 
+        }
+    
+        .nav-link li {
+            margin-bottom: 5px; 
+        }
+    
+    }
+    
